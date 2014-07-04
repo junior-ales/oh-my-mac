@@ -1,6 +1,6 @@
 class people::junior_ales {
 
-  package {[ "vim", "tree", "archey" ]:}
+  package {[ "vim", "tree", "archey", "caffeine" ]:}
 
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/Project/dotfiles"
