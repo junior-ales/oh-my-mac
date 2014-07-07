@@ -1,6 +1,19 @@
 class people::junior_ales {
 
-  package {[ "vim", "tree", "archey", "caffeine" ]:}
+  include iterm2::colors::solarized_dark
+  include chrome
+  include vlc
+  include virtualbox
+  include gimp
+  include libreoffice
+  include rdio
+
+  class { 'intellij':
+      edition => 'ultimate',
+      version => '13.1.1'
+  }
+
+  package {[ "vim", "tree", "archey", "caffeine", "leiningen" ]:}
 
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/Project/dotfiles"

@@ -59,3 +59,11 @@ github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "chrome",      "1.1.2"
+github "iterm2",      "1.1.1"
+github "intellij",    "1.5.1"
+github "vlc",         "1.1.0"
+github "virtualbox",  "1.0.12"
+github "gimp",        "1.0.1"
+github "libreoffice", "4.1.5"
+github "rdio",        "1.0.0"
