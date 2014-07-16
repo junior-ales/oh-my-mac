@@ -8,13 +8,14 @@ class people::junior_ales {
   include libreoffice
   include rdio
   include vundle
+  include caffeine
 
   class { 'intellij':
       edition => 'ultimate',
       version => '13.1.1'
   }
 
-  package {[ "vim", "tree", "archey", "caffeine", "leiningen" ]:}
+  package {[ "vim", "tree", "archey", "leiningen" ]:}
 
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/Project/dotfiles"
