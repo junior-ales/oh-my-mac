@@ -29,12 +29,12 @@ class people::junior_ales {
 
  repository { "${home}/.vim/bundle/Vundle.vim":
     source  => "gmarik/Vundle.vim",
-    require => Repository[$dotfiles]
+    require => Repository["${home}/.vimrc"],
   }
 
   exec { "install vundle packages":
     command => "vim +PluginInstall +qall",
-    require => Repository["${home}/.vim/bundle/Vundle.vim"]
+    require => Repository["${home}/.vim/bundle/Vundle.vim"],
   }
 
 
