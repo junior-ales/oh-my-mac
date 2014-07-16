@@ -5,7 +5,7 @@ class people::junior_ales {
   include vlc
   include virtualbox
   include gimp
-  include libreoffice
+  #include libreoffice
   include rdio
   include caffeine
 

@@ -1,12 +1,12 @@
 GITHUBTARBALL
-  remote: bdossantos/puppet-vundle
-  specs:
-    vundle (0.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.6.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-caffeine
+  specs:
+    caffeine (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -145,6 +145,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.6.1)
+  caffeine (= 1.0.0)
   chrome (= 1.1.2)
   dnsmasq (= 1.0.1)
   foreman (= 1.2.0)
@@ -171,6 +172,5 @@ DEPENDENCIES
   sudo (= 1.0.0)
   virtualbox (= 1.0.12)
   vlc (= 1.1.0)
-  vundle (= 0.0.2)
   xquartz (= 1.1.1)
 
