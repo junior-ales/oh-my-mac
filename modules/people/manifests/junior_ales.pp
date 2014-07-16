@@ -29,7 +29,7 @@ class people::junior_ales {
 
  repository { "${home}/.vim/bundle/Vundle.vim":
     source  => "gmarik/Vundle.vim",
-    require => Repository["${home}/.vimrc"],
+    require => File["${home}/.vimrc"],
   }
 
   exec { "install vundle packages":
