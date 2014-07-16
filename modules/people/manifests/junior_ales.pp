@@ -33,7 +33,7 @@ class people::junior_ales {
   }
 
   exec { "install vundle packages":
-    command => "vim < `tty` > `tty` +PluginInstall +qall",
+    command => "vim +PluginInstall +qall!",
     require => Repository["${home}/.vim/bundle/Vundle.vim"],
   }
 
