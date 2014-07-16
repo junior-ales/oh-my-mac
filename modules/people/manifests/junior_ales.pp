@@ -5,13 +5,12 @@ class people::junior_ales {
   include vlc
   include virtualbox
   include gimp
-  #include libreoffice
   include rdio
   include caffeine
 
   class { "intellij":
       edition => "ultimate",
-      version => "13.1.1"
+      version => "13.1.1",
   }
 
   package {[ "vim", "tree", "archey", "leiningen" ]:}
@@ -23,10 +22,6 @@ class people::junior_ales {
     source  => "junior-ales/dotfiles",
   }
 
-
-
-
-
  repository { "${home}/.vim/bundle/Vundle.vim":
     source  => "gmarik/Vundle.vim",
     require => File["${home}/.vimrc"],
@@ -36,11 +31,6 @@ class people::junior_ales {
     command => "vim +PluginInstall +qall!",
     require => Repository["${home}/.vim/bundle/Vundle.vim"],
   }
-
-
-
-
-
 
   file { "${home}/.vimrc":
     ensure => link,

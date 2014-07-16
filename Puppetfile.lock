@@ -64,11 +64,6 @@ GITHUBTARBALL
     iterm2 (1.1.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-libreoffice
-  specs:
-    libreoffice (4.1.5)
-
-GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.3)
@@ -158,7 +153,6 @@ DEPENDENCIES
   inifile (= 1.0.3)
   intellij (= 1.5.1)
   iterm2 (= 1.1.1)
-  libreoffice (= 4.1.5)
   module-data (= 0.0.3)
   nginx (= 1.4.3)
   nodejs (= 3.7.0)
