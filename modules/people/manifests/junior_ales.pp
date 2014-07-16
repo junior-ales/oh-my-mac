@@ -7,6 +7,7 @@ class people::junior_ales {
   include gimp
   include libreoffice
   include rdio
+  include vundle
 
   class { 'intellij':
       edition => 'ultimate',
