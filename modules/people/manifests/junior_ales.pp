@@ -13,7 +13,7 @@ class people::junior_ales {
       version => "13.1.1",
   }
 
-  package {[ "vim", "tree", "archey", "leiningen" ]:}
+  package {[ "vim", "tree", "archey", "leiningen", "gradle" ]:}
 
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/Project/dotfiles"
