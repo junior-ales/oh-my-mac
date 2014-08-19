@@ -35,7 +35,7 @@ class people::junior_ales {
     source  => "junior-ales/dotfiles",
   }
 
- repository { "${home}/.vim/bundle/Vundle.vim":
+  repository { "${home}/.vim/bundle/Vundle.vim":
     source  => "gmarik/Vundle.vim",
     require => File["${home}/.vimrc"],
   }
@@ -65,6 +65,8 @@ class people::junior_ales {
     target => "${dotfiles}/.gitconfig",
     require => Repository["${dotfiles}"],
   }
+
+  file { "${home}/bin": ensure => "directory", }
 
   file { "${home}/bin/customFunctions.bash":
     ensure => link,
