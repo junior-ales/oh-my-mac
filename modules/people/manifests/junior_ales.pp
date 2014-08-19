@@ -1,5 +1,6 @@
 class people::junior_ales {
 
+  include iterm2::stable
   include iterm2::colors::solarized_dark
   include chrome
   include vlc
@@ -7,6 +8,18 @@ class people::junior_ales {
   include gimp
   include rdio
   include caffeine
+
+  # Mac OS configuration
+  include osx::global::enable_standard_function_keys
+  include osx::global::tap_to_click
+  include osx::dock::autohide
+  include osx::software_update
+  include osx::keyboard::capslock_to_control
+
+  osx::dock::hot_corner { 'Start Screen Saver':
+    position => 'Top Right',
+    action => 'Start Screen Saver',
+  }
 
   class { "intellij":
       edition => "ultimate",
