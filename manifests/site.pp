@@ -63,19 +63,23 @@ node default {
   include nodejs::v0_10
   ruby::version { '2.1.2': }
 
-  include iterm2::stable
-  include chrome
-  include vlc
-  include virtualbox
-  include gimp
-  include rdio
-  include caffeine
-  include googledrive
+  include brewcask
 
-  class { "intellij":
-      edition => "ultimate",
-      version => "13.1.1",
-  }
+  package { 'adium'                      : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'google-drive'               : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'vlc'                        : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'virtualbox'                 : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'gimp'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'rdio'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'caffeine'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'intellij-idea'              : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'iterm2'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'limechat'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'evernote'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'send-to-kindle'             : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'vagrant'                    : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'sqlite-database-browser'    : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'skitch'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
 
   package { [  'vim', 'tree', 'archey', 'leiningen', 'gradle', 'ack', 'findutils', 'gnu-tar' ]: }
 

@@ -69,3 +69,5 @@ github "rdio",        "1.0.0"
 github "caffeine",    "1.0.0"
 github "osx",         "2.7.1"
 github "googledrive", "1.0.2"
+
+mod "brewcask", :git => "git://github.com/phinze/puppet-brewcask.git"
