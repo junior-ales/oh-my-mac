@@ -1,14 +1,6 @@
 class people::junior_ales {
 
-  include iterm2::stable
   include iterm2::colors::solarized_dark
-  include chrome
-  include vlc
-  include virtualbox
-  include gimp
-  include rdio
-  include caffeine
-  include googledrive
 
   # Mac OS configuration
   include osx::global::enable_standard_function_keys
@@ -21,13 +13,6 @@ class people::junior_ales {
     position => 'Top Right',
     action => 'Start Screen Saver',
   }
-
-  class { "intellij":
-      edition => "ultimate",
-      version => "13.1.1",
-  }
-
-  package {[ "vim", "tree", "archey", "leiningen", "gradle" ]:}
 
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/Project/dotfiles"
