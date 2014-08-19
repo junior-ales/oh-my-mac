@@ -31,8 +31,11 @@ class people::junior_ales {
   $home     = "/Users/${::boxen_user}"
   $dotfiles = "${home}/Project/dotfiles"
 
+  file { "${home}/bin": ensure => "directory", }
+
   repository { $dotfiles:
     source  => "junior-ales/dotfiles",
+    require => File["${home}/bin"],
   }
 
   repository { "${home}/.vim/bundle/Vundle.vim":
@@ -65,8 +68,6 @@ class people::junior_ales {
     target => "${dotfiles}/.gitconfig",
     require => Repository["${dotfiles}"],
   }
-
-  file { "${home}/bin": ensure => "directory", }
 
   file { "${home}/bin/customFunctions.bash":
     ensure => link,
