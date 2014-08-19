@@ -8,6 +8,7 @@ class people::junior_ales {
   include gimp
   include rdio
   include caffeine
+  include googledrive
 
   # Mac OS configuration
   include osx::global::enable_standard_function_keys
