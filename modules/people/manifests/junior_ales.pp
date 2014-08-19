@@ -72,7 +72,7 @@ class people::junior_ales {
   file { "${home}/bin/customFunctions.bash":
     ensure => link,
     mode   => "0754",
-    content => "${dotfiles}/scripts/customFunctions.bash",
+    target => "${dotfiles}/scripts/customFunctions.bash",
     require => Repository["${dotfiles}"],
   }
 }
