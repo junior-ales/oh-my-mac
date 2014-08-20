@@ -80,6 +80,7 @@ node default {
   package { 'vagrant'                    : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'sqlite-database-browser'    : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'skitch'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'java'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
 
   package { [  'vim', 'tree', 'archey', 'leiningen', 'gradle', 'ack', 'findutils', 'gnu-tar', 'maven' ]: }
 
