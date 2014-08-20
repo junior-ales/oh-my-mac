@@ -61,4 +61,11 @@ class people::junior_ales {
     target => "${dotfiles}/scripts/customFunctions.bash",
     require => Repository["${dotfiles}"],
   }
+
+  file { "${home}/Project/oh-my-mac":
+    ensure => link,
+    mode   => "0644",
+    target => $boxen::config::repodir,
+    require => Repository["${dotfiles}"],
+  }
 }
