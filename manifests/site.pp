@@ -81,7 +81,7 @@ node default {
   package { 'sqlite-database-browser'    : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'skitch'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
 
-  package { [  'vim', 'tree', 'archey', 'leiningen', 'gradle', 'ack', 'findutils', 'gnu-tar' ]: }
+  package { [  'vim', 'tree', 'archey', 'leiningen', 'gradle', 'ack', 'findutils', 'gnu-tar', 'maven' ]: }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
