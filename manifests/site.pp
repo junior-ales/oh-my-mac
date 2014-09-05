@@ -60,7 +60,9 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  include nodejs::v0_10
+  nodejs::version { 'v0.10.26': }
+  class { 'nodejs::global': version => 'v0.10.26' }
+
   ruby::version { '2.1.2': }
 
   include brewcask
