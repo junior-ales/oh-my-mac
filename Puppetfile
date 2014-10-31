@@ -29,7 +29,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.6.1"
+github "boxen", "3.7.0"
 
 # Support for default hiera data in modules
 
@@ -41,13 +41,13 @@ github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 github "dnsmasq",     "1.0.1"
 github "foreman",     "1.2.0"
 github "gcc",         "2.0.101"
-github "git",         "2.4.0"
+github "git",         "2.7.0"
 github "go",          "1.1.0"
-github "homebrew",    "1.9.3"
+github "homebrew",    "1.9.7"
 github "hub",         "1.3.0"
 github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",       "1.4.3"
-github "nodejs",      "3.7.0"
+github "nodejs",      "4.0.0"
 github "openssl",     "1.0.0"
 github "phantomjs",   "2.3.0"
 github "pkgconfig",   "1.0.0"
@@ -59,15 +59,7 @@ github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "chrome",      "1.1.2"
-github "iterm2",      "1.1.2"
-github "intellij",    "1.5.1"
-github "vlc",         "1.1.0"
-github "virtualbox",  "1.0.12"
-github "gimp",        "1.0.1"
-github "rdio",        "1.0.0"
-github "caffeine",    "1.0.0"
+github "iterm2",      "1.2.2"
 github "osx",         "2.7.1"
-github "googledrive", "1.0.2"
 
 mod "brewcask", :git => "git://github.com/phinze/puppet-brewcask.git"

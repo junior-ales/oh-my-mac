@@ -72,7 +72,6 @@ node default {
   package { 'vlc'                        : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'virtualbox'                 : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'gimp'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
-  package { 'rdio'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'caffeine'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'intellij-idea'              : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'iterm2'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
@@ -83,6 +82,9 @@ node default {
   package { 'sqlite-database-browser'    : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'skitch'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'java'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'android-file-transfer'      : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'dbvisualizer'               : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'spotify'                    : provider => 'brewcask', install_options => "--appdir=/Applications" }
 
   package { [  'vim', 'tree', 'archey', 'leiningen', 'gradle', 'ack', 'findutils', 'gnu-tar', 'maven' ]: }
 

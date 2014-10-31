@@ -8,17 +8,7 @@ GIT
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.6.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-caffeine
-  specs:
-    caffeine (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-chrome
-  specs:
-    chrome (1.1.2)
+    boxen (3.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -36,14 +26,9 @@ GITHUBTARBALL
     gcc (2.0.101)
 
 GITHUBTARBALL
-  remote: boxen/puppet-gimp
-  specs:
-    gimp (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.4.0)
+    git (2.7.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -51,14 +36,9 @@ GITHUBTARBALL
     go (1.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-googledrive
-  specs:
-    googledrive (1.0.2)
-
-GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.9.3)
+    homebrew (1.9.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -66,14 +46,9 @@ GITHUBTARBALL
     hub (1.3.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-intellij
-  specs:
-    intellij (1.5.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.1.2)
+    iterm2 (1.2.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -83,7 +58,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.7.0)
+    nodejs (4.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -106,11 +81,6 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-rdio
-  specs:
-    rdio (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.3.0)
@@ -124,16 +94,6 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-virtualbox
-  specs:
-    virtualbox (1.0.12)
-
-GITHUBTARBALL
-  remote: boxen/puppet-vlc
-  specs:
-    vlc (1.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -156,35 +116,27 @@ GITHUBTARBALL
     module-data (0.0.3)
 
 DEPENDENCIES
-  boxen (= 3.6.1)
+  boxen (= 3.7.0)
   brewcask (>= 0)
-  caffeine (= 1.0.0)
-  chrome (= 1.1.2)
   dnsmasq (= 1.0.1)
   foreman (= 1.2.0)
   gcc (= 2.0.101)
-  gimp (= 1.0.1)
-  git (= 2.4.0)
+  git (= 2.7.0)
   go (= 1.1.0)
-  googledrive (= 1.0.2)
-  homebrew (= 1.9.3)
+  homebrew (= 1.9.7)
   hub (= 1.3.0)
   inifile (= 1.0.3)
-  intellij (= 1.5.1)
-  iterm2 (= 1.1.2)
+  iterm2 (= 1.2.2)
   module-data (= 0.0.3)
   nginx (= 1.4.3)
-  nodejs (= 3.7.0)
+  nodejs (= 4.0.0)
   openssl (= 1.0.0)
   osx (= 2.7.1)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
-  rdio (= 1.0.0)
   repository (= 2.3.0)
   ruby (= 8.0.4)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
-  virtualbox (= 1.0.12)
-  vlc (= 1.1.0)
   xquartz (= 1.1.1)
 
