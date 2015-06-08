@@ -2,6 +2,7 @@ class people::junior_ales {
 
   include iterm2::stable
   include iterm2::colors::solarized_dark
+  include iterm2::colors::solarized_light
 
   # Mac OS configuration
   include osx::global::enable_standard_function_keys
