@@ -60,8 +60,9 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  nodejs::version { 'v0.12': }
-  class { 'nodejs::global': version => 'v0.12' }
+  nodejs::version { 'v0.12.0': }
+  nodejs::version { 'v0.12.4': }
+  class { 'nodejs::global': version => 'v0.12.4' }
 
   ruby::version { '2.1.2': }
 
