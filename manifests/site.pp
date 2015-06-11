@@ -68,15 +68,12 @@ node default {
 
   include brewcask
 
-  package { 'adium'                      : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'google-drive'               : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'vlc'                        : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'virtualbox'                 : provider => 'brewcask', install_options => "--appdir=/Applications" }
-  package { 'gimp'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'caffeine'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'intellij-idea'              : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'iterm2'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
-  package { 'limechat'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'evernote'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'send-to-kindle'             : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'vagrant'                    : provider => 'brewcask', install_options => "--appdir=/Applications" }
@@ -84,8 +81,16 @@ node default {
   package { 'skitch'                     : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'java'                       : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'android-file-transfer'      : provider => 'brewcask', install_options => "--appdir=/Applications" }
-  package { 'dbvisualizer'               : provider => 'brewcask', install_options => "--appdir=/Applications" }
   package { 'spotify'                    : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'adobe-creative-cloud'       : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'postgres'                   : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'skype'                      : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'libreoffice'                : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'firefox'                    : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'genymotion'                 : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'amazon-cloud-drive'         : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'android-studio'             : provider => 'brewcask', install_options => "--appdir=/Applications" }
+  package { 'boxcryptor-classic'         : provider => 'brewcask', install_options => "--appdir=/Applications" }
 
   package { [  'vim', 'tree', 'archey', 'leiningen', 'gradle', 'ack', 'findutils', 'gnu-tar', 'maven' ]: }
 
